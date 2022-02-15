@@ -1,4 +1,6 @@
-import 'package:controle_financa/financas/domain/entities/outgoing_entities.dart';
+
+
+import 'package:controle_financa/despesas/domain/entities/outgoing_entities.dart';
 
 class OutgloingDto extends OutgoingEntity{
 

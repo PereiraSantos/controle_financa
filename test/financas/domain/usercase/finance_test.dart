@@ -1,6 +1,6 @@
 import 'package:controle_financa/financas/domain/entities/finance_entities.dart';
 import 'package:controle_financa/financas/domain/repositories/register_finance_repository.dart';
-import 'package:controle_financa/financas/domain/usercases/finance_usercases/register_finance_usercase_impl.dart';
+import 'package:controle_financa/financas/domain/usercases/register_finance_usercase_impl.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 
