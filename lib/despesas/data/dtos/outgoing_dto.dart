@@ -20,4 +20,22 @@ class OutgloingDto extends OutgoingEntity{
       idFinance: codFinance, 
       value: valueOutgoing
     );
+
+  Map toMap(){
+    return {
+      "descriptionOutgoing": descriptionOutgoing,
+      "valueOutgoing": valueOutgoing,
+      "codFinance": codFinance,
+      "dateOutgoing": dateOutgoing,
+    };
+  }
+
+  static OutgloingDto fromMap(Map map){
+    return OutgloingDto(
+      descriptionOutgoing: map['descriptionOutgoing'],
+      dateOutgoing: map['dateOutgoing'],
+      valueOutgoing: map['valueOutgoing'],
+      codFinance: map['codFinance']
+    );
+  }
 }

@@ -1,4 +1,4 @@
-import 'package:controle_financa/financas/data/datasources/get_financa_datasource.dart/get_finance_datasource.dart';
+import 'package:controle_financa/financas/data/datasources/get_finance_datasource.dart';
 import 'package:controle_financa/financas/data/dtos/finance_dto.dart';
 import 'package:controle_financa/financas/data/repositories/get_finance_repository_imp.dart';
 import 'package:dartz/dartz.dart';

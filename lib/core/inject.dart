@@ -1,6 +1,6 @@
 
-import 'package:controle_financa/financas/data/datasources/get_financa_datasource.dart/get_finance_datasource.dart';
-import 'package:controle_financa/financas/data/datasources/get_financa_datasource.dart/local/get_finance_local_datasource_imp.dart';
+import 'package:controle_financa/financas/data/datasources/get_finance_datasource.dart';
+import 'package:controle_financa/financas/data/datasources/local/get_finance_local_datasource_imp.dart';
 import 'package:controle_financa/financas/data/repositories/get_finance_repository_imp.dart';
 import 'package:controle_financa/financas/data/repositories/register_finance_repository_imp.dart';
 import 'package:controle_financa/financas/domain/repositories/get_finance_repository.dart';
@@ -27,7 +27,7 @@ class Inject{
       () => GetFinanceRepositoryImp(getIt())
     );
     getIt.registerLazySingleton<RegisterFiananceRepository>(
-      () => RegisterFinanceRepositoryImpl()
+      () => RegisterFinanceRepositoryImpl(getIt())
     );
 
     //usercases
